@@ -1,0 +1,35 @@
+{
+  "name": "intent-terminal",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Prompt-to-trade terminal: natural language in, executed onchain trades out.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "trade": "tsx cli/trade.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "@solana/web3.js": "^1.95.4",
+    "@tanstack/react-query": "^5.59.0",
+    "bs58": "^6.0.0",
+    "dotenv": "^17.4.2",
+    "next": "^15.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "viem": "^2.21.0",
+    "wagmi": "^2.12.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
